@@ -1,0 +1,379 @@
+/* Estilo Geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+}
+
+.interface {
+    width: 1500px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #ffffff;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+button:hover,
+form .btn-enviar input:hover {
+    box-shadow: 0px 0px 8px #acacac;
+    transform: scale(1.05);
+}
+
+
+
+/* Estilo do cabeĆ§alho */
+header {
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #ffffff27;
+}
+
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: rgb(105, 104, 104);
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+    font-size: 20px;
+}
+
+header a:hover {
+    color: #fff;
+    transform: scale(1.05);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 5 58px;
+}
+
+
+
+/* ESTILO-TOPO-DO-SITE */
+section.topo-do-site {
+    padding: 40px 4%;
+
+
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1 {
+    color: #fff;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site p {
+    color: #fff;
+    margin: 40px 0px;
+}
+
+.topo-do-site .img-topo-site img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+    height: 500px;
+    padding-top: 70px;
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px;
+    }
+}
+
+/* CURRĆ¨CULO */
+.titulo {
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 230px;
+
+}
+
+.titulo h2 {
+    font-size: 34px;
+}
+
+.titulo spam {
+    color: rgb(105, 104, 104);
+}
+
+.dropdown {
+    padding-left: 50px;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    width: 100%;
+    /* max-width: 600px; */
+    padding-right: 50px;
+    padding-top: 90px;
+
+    transition: .2s;
+}
+
+section details summary {
+
+    padding: 2%;
+    border-bottom: 2px solid #1e1d1d;
+    font-weight: 350;
+    font-size: 20px;
+}
+
+section details p {
+    background-color: #060606;
+    color: #fff;
+    padding: 2%;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.formulario .titulo {
+    font-size: 50px;
+    padding-top: 60px;
+    gap: 30px;
+}
+
+/* FIM-DO-CURRĆ¨CULO */
+/* FORMULARIO */
+section.formulario {
+    padding: 150px 4%;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 110px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    background-color: #242323;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+}
+
+form textarea {
+    resize: none;
+    max-height: 300px;
+}
+
+
+
+#mensagem {
+    width: 100%;
+    height: 200px;
+}
+
+form .btn-enviar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input {
+    width: 89px;
+    height: 46px;
+    padding-top: 9px;
+    background-color: #ffffff;
+    color: #332f2f;
+    font-weight: 580;
+    cursor: pointer;
+    transition: .2s;
+    text-transform: uppercase;
+}
+
+/* FIM FORMULARIO */
+
+/* RODAPE */
+.btn-social button {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: none;
+    background-color: #898989;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 -13px;
+    transition: .2s;
+    text-align: center;
+}
+
+.btn-social {
+    padding: 10px;
+    text-align: center;
+}
+
+.copy {
+    color: #b9b4b4;
+    text-align: center;
+    font-size: 13px;
+    padding-top: 10px;
+}
+
+
+footer {
+    padding: 30px 4%;
+    box-shadow: 0px 0px 40px 10px #ffffff13;
+}
+
+footer .flex {
+    justify-content: space-between;
+    width: 60%;
+    padding-left: 550px;
+}
+
+footer .line-footer {
+    padding: 8px 0;
+    justify-content: space-between;
+}
+
+.borda {
+    border-top: 2px solid #332f2f;
+
+}
+
+footer .line-footer p i {
+    color: #fff;
+    font-size: 25px;
+}
+
+footer .line-footer p a {
+    color: #8d8d8d;
+
+}
+
+.icone-home {
+    padding-right: 20px;
+}
+
+
+
+/* FIM RODAPE */
+
+/* RESPONSIVO */
+@media (max-width: 1020px) {
+
+    /* CLASSES GERAIS */
+    .flex {
+        max-width: 25%;
+        display: block;
+        gap: 10px;
+        padding: 5px;
+    }
+
+    section.formulario {
+        padding: 120px 4%;
+    }
+
+
+    footer .flex {
+        padding-left: 42px;
+    }
+
+    section.topo-do-site {
+        padding: 26px 1%;
+    }
+
+    .topo-do-site .img-topo-site img {
+        padding-top: 166px;
+        text-align: center;
+        padding-right: 20px;
+    }
+
+    .resumo {
+        word-break: normal;
+    }
+
+    .copy {
+        color: #b9b4b4;
+        font-size: 13px;
+        padding-left: 118px;
+        text-align: justify;
+    }
+
+    footer .line-footer {
+        padding: 3px 0px;
+    }
+
+    .borda {
+        max-width: 360px;
+        padding: auto;
+    }
+
+    /* CABEĆ‡ALHO */
+
+
+    .btn-social {
+        text-align: center;
+        padding-top: 4px;
+        gap: 10px;
+        margin: 5px 5px;
+        padding: 0;
+
+
+    }
+
+    .txt-topo-site h1 {
+        font-size: 30px;
+        padding-right: 4px;
+    }
+
+    .titulo {
+        padding-top: 155px;
+    }
+
+    .footer {
+        padding: 30px 4%;
+    }
+
+
+}
+
+/* FIM RESPONSIVO */
